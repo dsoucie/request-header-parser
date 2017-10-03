@@ -1,0 +1,22 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "This is a simple request header parser built for the freeCodeCamp.org Request Header Parser project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsoucie/request-header-parser.git"
+  },
+  "author": "dsoucie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsoucie/request-header-parser/issues"
+  },
+  "homepage": "https://github.com/dsoucie/request-header-parser#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
