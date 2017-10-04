@@ -11,7 +11,8 @@ app.get('/whoami', (request, response) => {
   let languagesAccepted = request.acceptsLanguages()[0];
   let userAgent = request.headers['user-agent']; 
   let software = userAgent.slice(userAgent.indexOf('(') + 1, userAgent.indexOf(')'));
-  let ip = request.ip;
+  let ip = request.headers['x-forwarded-for'];
+
   response.json({
     "ip": ip,
     "language": languagesAccepted,
@@ -19,4 +20,4 @@ app.get('/whoami', (request, response) => {
   });
 });
 
-app.listen(3000);
+app.listen(8080);
